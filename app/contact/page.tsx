@@ -18,9 +18,9 @@ export default function ContactPage() {
               Interested in 1:1 coaching or leadership development support?
               Email me at:
             </p>
-            <p className="text-blue-300  font-semibold text-lg mt-2">
+            <a href="mailto:mkimber@managedenterprises.net" className="text-blue-300  font-semibold text-lg mt-2">
               mkimber@managedenterprises.net
-            </p>
+            </a>
           </div>
 
           <div className="bg-slate-900 p-6 rounded-xl shadow-md">
@@ -29,9 +29,9 @@ export default function ContactPage() {
               Want to interview or connect about a leadership opportunity?
               Reach me directly at:
             </p>
-            <p className="text-blue-300  font-semibold text-lg mt-2">
+            <a href="mailto:marcdevceo@gmail.com" className="text-blue-300  font-semibold text-lg mt-2">
               marcdevceo@gmail.com
-            </p>
+            </a>
           </div>
         </div>
       </section>
