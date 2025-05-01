@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Code.Coach.Culture 🧑🏾‍💻⚙️🧠  
+**A blog built by Marcus Kimber — The People Developer**  
+[Live Site →](https://code-coach-culture.vercel.app)
 
-## Getting Started
+---
 
-First, run the development server:
+## 🧭 About This Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Code.Coach.Culture** is a content platform that blends software development, leadership growth, and operational strategy.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Built with Next.js 15 and MDX, it’s a personal blog with 4 core categories:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Dev Diaries** – developer journey, lessons, and technical growth  
+- **Leadership Logs** – people development, culture, and emotional intelligence  
+- **Ops & Strategy** – operational frameworks, queue management, and tooling  
+- **Mind & Motivation** – personal mindset, discipline, and clarity
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Whether you're a new leader, aspiring dev, or frontline team member, this blog gives you the blueprint to lead and grow with intention.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS + Prose
+- **Content**: MDX (static content with future backend-ready structure)
+- **Animation**: Framer Motion
+- **Deployment**: Vercel
+- **Version Control**: Git + GitHub
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📁 Folder Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+/app /about-me /contact /[category] /[slug] /content /dev-diaries /leadership-logs /ops-strategy /mindset-motivation /components Hero.tsx CategoryLinks.tsx MDXContent.tsx PostCard.tsx /lib getAllPosts.ts /types post.ts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## 👋 About the Creator
+
+**Marcus Kimber**  
+20+ years in customer service · 10+ years in leadership · Software developer on a mission.
+
+I’ve coached AppleCare teams, built real-time queue systems, and created full-stack web apps that blend operational excellence with people-first design. I build systems that help teams thrive—from Excel dashboards to React-based platforms.
+
+📫 Connect with me:  
+[LinkedIn](https://www.linkedin.com/in/marcus-k-a6800995)  
+[code-coach-culture.vercel.app](https://code-coach-culture.vercel.app)
+
+---
+
+✨ Future Plans
+Add CMS or backend support (FastAPI, Django, or Notion API)
+
+Build custom MDX components (Callouts, Quotes, Charts)
+
+Add email subscriptions and content filters
+
+Deploy resume + portfolio site integration
+
