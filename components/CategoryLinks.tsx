@@ -1,8 +1,7 @@
-
 import { categoryProps } from "@/content/data/categories";
 import Link from "next/link";
 
-export default function NavButton() {
+export default function CategoryLinks() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 pb-24">
       {Object.entries(categoryProps).map(([title, {emoji, color, link }]) => (

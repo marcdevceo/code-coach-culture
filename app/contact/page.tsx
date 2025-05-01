@@ -1,35 +1,50 @@
-import React from 'react';
+import React from "react";
 
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-green-900 to-gray-700 text-gray-200 px-6 py-20 font-sans">
       <section className="max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">Let’s Connect</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
+          Let’s Connect
+        </h1>
 
         <p className="text-lg md:text-xl mb-10 text-center">
-          Whether you’re looking to grow your leadership skills or hire one, I’d love to hear from you.
-          I offer both coaching for individuals and leadership for teams—so let’s start the conversation.
+          Whether you are looking to grow as a leader or bring one onto your
+          team, I’d love to connect. I offer personalized coaching for
+          individuals and experienced leadership for teams. Let’s start the
+          conversation.
         </p>
-
         <div className="space-y-10">
           <div className="bg-slate-900 p-6 rounded-xl shadow-md">
-            <h2 className="text-2xl font-bold mb-2">🧑🏽‍💼 For Coaching & Career Growth</h2>
+            <h2 className="text-2xl font-bold mb-2">
+              🧑🏽‍💼 Coaching & Career Growth
+            </h2>
             <p className="text-lg">
-              Interested in 1:1 coaching or leadership development support?
-              Email me at:
+              Ready for 1:1 coaching or support in stepping into your next
+              leadership role? Reach out to start building with clarity and
+              confidence:
             </p>
-            <a href="mailto:mkimber@managedenterprises.net" className="text-blue-300  font-semibold text-lg mt-2">
+            <a
+              href="mailto:mkimber@managedenterprises.net?subject=Leadership Coaching Inquiry"
+              className="text-blue-300 font-semibold text-lg mt-2 block"
+            >
               mkimber@managedenterprises.net
-            </a>
+            </a>{" "}
           </div>
 
           <div className="bg-slate-900 p-6 rounded-xl shadow-md">
-            <h2 className="text-2xl font-bold mb-2">🏢 For Employers & Partnerships</h2>
+            <h2 className="text-2xl font-bold mb-2">
+              🏢 Employers & Partnerships
+            </h2>
             <p className="text-lg">
-              Want to interview or connect about a leadership opportunity?
-              Reach me directly at:
+              Want to connect about a leadership opportunity, collaboration, or
+              strategic role? Let’s talk about how I can bring value to your
+              team:
             </p>
-            <a href="mailto:marcdevceo@gmail.com" className="text-blue-300  font-semibold text-lg mt-2">
+            <a
+              href="mailto:marcdevceo@gmail.com?subject=Leadership Coaching Inquiry"
+              className="text-blue-300 font-semibold text-lg mt-2 block"
+            >
               marcdevceo@gmail.com
             </a>
           </div>

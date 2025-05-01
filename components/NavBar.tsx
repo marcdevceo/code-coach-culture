@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
     return (
-      <nav className="w-full py-2 px-2 md:py-4 md:px-6 bg-slate-900 shadow-md flex justify-between items-center">
+      <nav className="w-full p-4 md:py-4 md:px-6 bg-slate-900 shadow-md flex justify-between items-center">
         <div className="text-sm md:text-xl font-bold text-gray-200">
           <Link href="/">
             Code.Coach.Culture.
@@ -14,9 +14,6 @@ export default function NavBar() {
           </Link>
           <Link href="/about-me"
              className="text-gray-200 text-sm md:text-xl hover:text-green-600 transition">AboutMe
-          </Link>
-          <Link href="/resume"
-             className="text-gray-200 text-sm md:text-xl hover:text-green-600 transition">Resume
           </Link>
           <Link href="/contact"
             className="text-gray-200 text-sm md:text-xl hover:text-green-600 transition">Contact

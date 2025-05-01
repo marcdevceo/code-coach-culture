@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { motion } from "framer-motion";
@@ -40,10 +41,10 @@ export default function Hero() {
           Take control of your career – Meet the Leader within
         </Link>
         <Link
-          href="/resume"
+          href="/contact"
           className="inline-block px-6 py-3 text-lg font-semibold bg-slate-900 text-gray-200 rounded-2xl shadow-md hover:bg-green-700 transition-all"
         >
-          Looking to hire a proven leader?
+          Let's Work Together
         </Link>
       </motion.div>
     </section>
