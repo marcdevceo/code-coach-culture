@@ -1,0 +1,98 @@
+---
+title: 
+slug: "backend-auth"
+date: "2025-05-12"
+category: "dev-diaries"
+summary: "Auth ain’t pretty… but it’s powerful."
+---
+
+<h3 className="text-lg italic text-center mb-12">
+  Auth ain’t pretty… but it’s powerful.
+</h3>
+
+<h2 className="text-2xl font-bold mb-4">🛠️ What I Built Today</h2>
+<h3 className="text-lg mb-8">
+  Today was about giving my project a real backbone — secure user authentication
+  with FastAPI, JWTs, and a PostgreSQL database running in Docker.
+</h3>
+<h3 className="text-lg mb-8">I implemented:</h3>
+<ul className="list-disc list-inside text-lg mb-8">
+  <li>✅ User registration with password hashing (passlib[bcrypt])</li>
+  <li>✅ Login route that returns a JWT (python-jose)</li>
+  <li>✅ Token validation with a get_current_user dependency</li>
+  <li>✅ A protected <code className="bg-gray-200 px-1">/me</code> route that returns the current logged-in user</li>
+  <li>✅ Swagger and Postman setup for auth testing</li>
+</ul>
+
+<h2 className="text-2xl font-bold mb-4">
+  🧱 What Went Wrong (And What I Fixed)
+</h2>
+<h3 className="text-lg mb-8">
+  Let me be real — nothing about this was smooth at first. Here's the wall I hit
+  and how I climbed over it:
+</h3>
+
+<h3 className="text-lg mb-2 font-semibold">
+  ❌ 1. .env wasn’t loading (and I knew it should be)
+</h3>
+<h3 className="text-lg mb-4">
+  Turns out VS Code’s terminal sometimes doesn’t launch from the root where
+  <code>.env</code> lives. <br />
+  <strong>Fix:</strong> Closed and reopened VS Code like a good ol’ "did you try
+  turning it off and on again?" moment. It worked.
+</h3>
+
+<h3 className="text-lg mb-2 font-semibold">
+    ❌ 2. Tables weren’t showing up
+</h3>
+<h3 className="text-lg mb-4">
+  I had a full SQLAlchemy model for User… but the database was empty. <br />
+  <strong>Fix:</strong> I accidentally re-declared
+  <code>Base = declarative_base()</code> in <code>base.py</code>, overwriting my
+  custom Base from <code>base_class.py</code>. Removed it and boom — users table
+  appeared.
+</h3>
+
+<h3 className="text-lg mb-2 font-semibold">
+  ❌ 3. Swagger Auth UI
+</h3>
+<h3 className="text-lg mb-4">
+  Swagger kept showing a login form when I just wanted to paste a token. I
+  pasted it into the wrong field and got 422 error. <br />
+  <strong>Fix:</strong> Switched over to Postman (and eventually the VS Code
+  Postman extension). Cleaner, clearer, and lets me test with full control.
+</h3>
+
+<h2 className="text-2xl font-bold mb-4">🧠 What I Learned</h2>
+<ul className="list-disc list-inside text-lg mb-8">
+  <li>JWTs aren’t just copy-paste magic. You gotta understand how <code>sub</code>, <code>exp</code>, and Bearer headers work.</li>
+  <li>Swagger is helpful, but not built for modern token-based flows out the box.</li>
+  <li>Docker and FastAPI work beautifully — if your <code>.env</code>, SQLAlchemy base, and imports are tight.</li>
+  <li>Sometimes it’s not your code. It’s your IDE, your path, or your context. Restarting can be a solution.</li>
+</ul>
+
+<h2 className="text-2xl font-bold mb-4">✅ Wins of the Day</h2>
+<ul className="list-disc list-inside text-lg mb-8">
+  <li>Auth is working, secure, and scalable</li>
+  <li>Tokens are flowing</li>
+  <li><code>/me</code> route is protected and accurate</li>
+  <li>My confidence as a backend dev just jumped</li>
+</ul>
+
+<h2 className="text-2xl font-bold mb-4">🚀 Next Steps</h2>
+<ul className="list-disc list-inside text-lg mb-8">
+  <li>Add Tribe creation and invite-only joining</li>
+  <li>Build out the vibe post model</li>
+  <li>Protect routes using <code>get_current_user()</code></li>
+  <li>Commit and document each feature in GitHub with real commit messages</li>
+</ul>
+
+<blockquote className="border-l-4 border-emerald-600 pl-4 italic text-xl mb-12">
+  Today wasn’t about moving fast. It was about moving right. This wasn’t
+  tutorial-copying — it was real debugging, architecture thinking, and muscle
+  memory building. That’s how senior devs are forged.
+</blockquote>
+
+<h3 className="text-center text-md text-gray-700 mt-16">
+  Keep building with clarity, confidence, and culture.
+</h3>
